@@ -1,0 +1,205 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(120deg,#ffbf00,orange);
+  min-height: 100vh;
+}
+
+/* Style the side navigation */
+.sidenav {
+
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #F0FFF0;
+  overflow-x: hidden;
+  padding-top: 10px;
+
+ 
+}
+
+.sidenav h2 {
+   padding: 0px 0px 0px 22px;
+  text-decoration: none;
+  font-size: 30px;
+  
+}
+
+/* Side navigation links */
+.sidenav a {
+
+ padding: 6px 6px 6px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition-duration: 0.10s;
+}
+
+/* Change color on hover */
+.sidenav a:hover {
+  background-color: #ddd;
+  color: #400080;
+  font-size: 23px;
+  box-shadow: 0 3px 3px 0  #999;
+}
+
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: #818181;
+   text-align: left;
+   margin-left: 10px;
+   font-size:12px;
+}
+/* Style the content */
+.content {
+  margin-left: 200px;
+  padding-left: 30px;
+
+
+}
+
+.content h1 {
+  padding: 14px 0px 0px 14px;
+  text-decoration: none;
+  font-size: 35px;
+  color: #818181;
+}
+.callout {
+  position: fixed;
+  width:35%;
+  float: center;
+  border: 3px solid #400080;
+   bottom: 35px;
+  right: 20px;
+  margin-left: 20px;
+   box-shadow: 0 19px 19px 0 #999;
+}
+
+.callout-header {
+  padding: 15px 15px;
+  background: #5900b3;
+  font-size: 35px;
+  color: white;
+}
+
+.callout-container {
+  padding: 15px;
+  background-color: white;
+  color:#818181 ;
+}
+
+.closebtn {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.closebtn:hover {
+  color: red;
+}
+.container{
+  max-width: 800px;
+  margin: auto;
+  padding: 10px;
+}
+
+.txtb{
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #000;
+  background: none;
+  padding: 10px;
+  outline: none;
+  font-size: 18px;
+}
+
+h3{
+  margin: 10px 0;
+}
+
+.task{
+  width: 100%;
+  background: rgba(255,255,255,0.5);
+  padding: 18px;
+  margin: 6px 0;
+  overflow: hidden;
+}
+
+.task i{
+  float: right;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.comp .task{
+  background: rgba(0,0,0,.5);
+  color: #fff;
+}
+
+
+
+/* This is code for multi screen fame work */
+@media screen and (max-width: 900px) {
+  ul.menu {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  
+  ul.menu li a {
+    float: left;
+    padding: 15px;
+  }
+  
+}
+
+@media screen and (max-width: 500px) {
+  .sidenav {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-bottom: 10px;
+  }
+
+  .sidenav a {float: left;}
+  div.content {margin-left: 0;}
+
+  .sidenav h2{float: left;}
+  div.content {margin-left: 0;}
+
+  .sidenav a {
+    text-align: center;
+    float: none;
+  }
+  .sidenav h2{
+    text-align: center;
+    float: none;
+  }
+
+  .callout {
+  position: fixed;
+  width:75%;
+  float: center;
+  border: 3px solid #400080;
+   bottom: 35px;
+  right: 20px;
+  margin-left: 20px;
+   box-shadow: 0 19px 19px 0 #999;
+}
+}

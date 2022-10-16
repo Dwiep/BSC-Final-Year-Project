@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+			<link rel="stylesheet" type="text/css" href="board.css">
+			<!-- link for CSS -->
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<!-- icon link -->
+		  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+        
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
+  
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <!--JS for text  -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CSS Template</title>
+
+
+</head>
+<body>
+
+<div class="sidenav">
+  <h2><font color="#ffbf00">Class</font><font color="#5900b3">Mates</font></a></h2>
+  <a href="home.html"><i class="fas fa-home"></i> Home</a> 
+  <a class="active" href="board.html"><i class="fas fa-users"></i> Board</a> 
+  <a href="progretion.html"><i class="fas fa-chart-line"></i> Progression</a> 
+  <a href="chat.html"><i class="fas fa-comments"></i> Chat</a>
+  <a href="calender.html"><i class="fas fa-calendar-alt"></i> Calender</a> 
+  <a href="document.html"><i class="fas fa-folder-open"></i> Documents</a> 
+  <a href="clipart.html"><i class="fas fa-paper-plane"></i> Q&A Clipart</a>
+
+  <div class="footer">
+    <p>Copyright&#169_DW13P_u1740136</p>
+  </div>
+</div>
+
+<div class="content">
+  <h1>Board</h1>
+  
+
+
+
+
+        <div class="callout">
+          <div class="callout-header"><i style="color: #ffbf00"class="fas fa-lightbulb"></i></div>
+          <span class="closebtn" onclick="this.parentElement.style.display='none';"><i class=" fas fa-times"></i></span>
+          <div class="callout-container">
+            <p>This framework feature allows user to create a group chat. To make new group click on "+"</p>
+          </div>
+        </div>
+
+
+
+
+
+
+    <div class="grid-container">
+        <div class="item1">
+          <button class="button1" onclick="openForm()"><i class="fas fa-plus-square"></i></button>     
+          <div class="chat-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+              <h2>Create your Group</h2>
+              
+              <label for="msg"><r>Group Name:</r></label>
+              <input type="text" id="myText" placeholder="Type Name..">
+              <br></br>
+              <label for="msg"><r>Description:</r></label>
+              <textarea placeholder="Type.." name="msg" required></textarea>
+               <br></br>
+              <label for="contact"><r>Choose Members:</r></label>
+            <select id="contact" name="contact" size="4" multiple>
+              <option value="contact1">Alex</option>
+              <br></br>
+              <option value="contact2">Fred</option>
+              <br></br>
+              <option value="contact3" selected>Jimmy</option>
+              <br></br>
+              <option value="contact4">Ron</option>
+            </select>
+              <br></br>
+              <button type="button" class="btnc" onclick="closeForm()">Cancel</button>
+              <button type="submit" class="btn" onclick="myFunction() || closeForm() ||myFunction2() ">Create</button>
+              
+            </form>
+          </div>
+        </div>
+
+
+        <div class="item2"> 
+            <button class="newbtn" id="demo" onclick="openForm2()"></button> 
+        </div> 
+
+
+        <div class="item3">
+          <div class="chat-popup2" id="myForm2">
+            <form action="/action_page.php" class="form-container2">
+              <h2><b id="demo2"></b><button type="button" class="btncancel" onclick="closeForm2()"><i class=" fas fa-times"></i></button></h2>
+                  <br></br> <br></br> <br></br> <br></br>
+              <div class="notcomp">
+              </div>
+              <input type="text" class="txtb" placeholder=" Write here">
+            </form>
+          </div>
+        </div>
+    </div>
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myText").value;
+      document.getElementById("demo").innerHTML = x;
+      document.getElementById("demo").style.display = "block";
+    }
+
+     function myFunction2() {
+      var x = document.getElementById("myText").value;
+      document.getElementById("demo2").innerHTML = x;
+      document.getElementById("demo2").style.display = "block";
+    }
+
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+
+    function openForm2() {
+      document.getElementById("myForm2").style.display = "block";
+    }
+
+    function closeForm2() {
+      document.getElementById("myForm2").style.display = "none";
+    }
+
+    </script>
+     <script type="text/javascript">
+              $(".txtb").on("keyup",function(e){
+                //13  means enter button
+                if(e.keyCode == 13 && $(".txtb").val() != "")
+                {
+                  var task = $("<div class='task'></div><br></br>").text($(".txtb").val());
+
+                  task.append();
+                  $(".notcomp").append(task);
+                  $(".txtb").val("");  
+                }
+              });
+            </script>
+</div>
+</body>

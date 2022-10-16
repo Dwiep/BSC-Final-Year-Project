@@ -1,0 +1,300 @@
+
+body {
+
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the side navigation */
+.sidenav {
+
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #F0FFF0;
+  overflow-x: hidden;
+  padding-top: 10px;
+
+ 
+}
+
+.sidenav h2 {
+   padding: 0px 0px 0px 22px;
+  text-decoration: none;
+  font-size: 30px;
+  
+}
+
+/* Side navigation links */
+.sidenav a {
+
+ padding: 6px 6px 6px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition-duration: 0.10s;
+}
+
+/* Change color on hover */
+.sidenav a:hover {
+  background-color: #ddd;
+  color: #400080;
+  font-size: 23px;
+  box-shadow: 0 3px 3px 0  #999;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: #818181;
+   text-align: left;
+   margin-left: 10px;
+   font-size:12px;
+}
+/* Style the content */
+.content {
+  margin-left: 200px;
+  padding-left: 30px;
+
+}
+
+.content h1 {
+  padding: 14px 0px 0px 14px;
+  text-decoration: none;
+  font-size: 35px;
+  color: #818181;
+}
+
+.callout {
+  position: fixed;
+  width:35%;
+  float: center;
+  border: 3px solid #400080;
+   bottom: 35px;
+  right: 20px;
+  margin-left: 20px;
+   box-shadow: 0 19px 19px 0 #999;
+}
+
+.callout-header {
+  padding: 15px 15px;
+  background: #5900b3;
+  font-size: 35px;
+  color: white;
+}
+
+.callout-container {
+  padding: 15px;
+  background-color: white;
+  color:#818181 ;
+}
+
+.closebtn {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.closebtn:hover {
+  color: red;
+}
+
+
+.button1 {
+  background-color: #ffbf00; 
+  color: white; 
+  padding: 20px 50px;
+  border: 2px solid orange;
+  font-size:48px;
+  color:white;
+  border-radius: 12%;
+  float: left;
+  margin: 10px 20px;
+  transition-duration: 0.5s;
+
+}
+
+.button1:hover {
+  background-color: white;
+  font-size:65px;
+  color:#400080;
+  box-shadow: 0 19px 19px 0 #999;
+}
+
+.button {
+  background-color: #818181; 
+  color: white; 
+  padding: 5px 10px;
+  border: 2px solid darkgrey;
+  font-size:48px;
+  color:white;
+  border-radius: 100%;
+  font-size: 30px;
+  margin: 0px 20px;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  float: right;
+}
+
+.button:hover {
+  background-color: #FFFFFF;
+  font-size:40px;
+  color:#ffbf00;
+  box-shadow: 0 19px 19px 0 #999;
+}
+
+.chat-popup {
+  display: none;
+  position: fixed;
+  top: 30px;
+  right: 15px;
+  z-index: 9;
+}
+
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 600px;
+  padding: 30px 30px;
+  background-color: #ffffff;
+  box-shadow: 0 39px 59px 0 #999;
+  border: 3px solid orange;
+}
+
+
+.pname {
+   font-size: 20px;
+   font-style: bold;
+   color: lightgrey;
+}
+
+.email{
+    font-size:18px;
+    color: lightgrey;
+}
+
+.online{
+    font-size:25px;
+    color: lightgreen;
+}
+
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition-duration: 0.5s;
+  background-color: red; 
+  border: 2px solid red;
+  font-size:14px;
+  color:white;
+  border-radius:12px;
+}
+
+
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover {
+   background-color: white;
+   font-size:15px;
+   color:red;
+   box-shadow: 0 19px 19px 0 #999;
+}
+
+
+
+/* This is code for multi screen fame work *
+@media screen and (max-width: 900px) {
+  ul.menu {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  
+  ul.menu li a {
+    float: left;
+    padding: 15px;
+  }
+  
+}
+
+@media screen and (max-width: 400px) {
+  ul.menu li a {
+    text-align: center;
+    padding: 80px;
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 700px) {
+  .sidenav {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-bottom: 10px;
+  }
+  .sidenav a {float: left;}
+  div.content {margin-left: 0;}
+
+  .sidenav h2{float: left;}
+  div.content {margin-left: 0;}
+}
+*/
+
+
+@media screen and (max-width: 500px) {
+  .sidenav {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-bottom: 10px;
+  }
+
+  .sidenav a {float: left;}
+  div.content {margin-left: 0;}
+
+  .sidenav h2{float: left;}
+  div.content {margin-left: 0;}
+
+  .sidenav a {
+    text-align: center;
+    float: none;
+  }
+  .sidenav h2{
+    text-align: center;
+    float: none;
+  }
+
+  .callout {
+  position: fixed;
+  width:75%;
+  float: center;
+  border: 3px solid #400080;
+   bottom: 35px;
+  right: 20px;
+  margin-left: 20px;
+   box-shadow: 0 19px 19px 0 #999;
+}
+}

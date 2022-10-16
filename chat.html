@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+			<link rel="stylesheet" type="text/css" href="chat.css">
+			<!-- link for CSS -->
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<!-- icon link -->
+		  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+        
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!--JS for text  -->
+      
+<title>CSS Template</title>
+
+
+</head>
+<body>
+
+  <div class="sidenav">
+  <h2><font color="#ffbf00">Class</font><font color="#5900b3">Mates</font></a></h2>
+  <a href="home.html"><i class="fas fa-home"></i> Home</a> 
+  <a href="board.html"><i class="fas fa-users"></i> Board</a> 
+  <a href="progretion.html"><i class="fas fa-chart-line"></i> Progression</a> 
+  <a class="active" href="chat.html"><i class="fas fa-comments"></i> Chat</a>
+  <a href="calender.html"><i class="fas fa-calendar-alt"></i> Calender</a> 
+  <a href="document.html"><i class="fas fa-folder-open"></i> Documents</a> 
+  <a href="clipart.html"><i class="fas fa-paper-plane"></i> Q&A Clipart</a>
+  <div class="footer">
+    <p>Copyright&#169_DW13P_u1740136</p>
+  </div>
+</div>
+<div class="content">
+  <h1>Chat</h1>
+
+
+
+
+        <div class="callout">
+          <div class="callout-header"><i style="color: #ffbf00"class="fas fa-lightbulb"></i></div>
+          <span class="closebtn" onclick="this.parentElement.style.display='none';"><i class=" fas fa-times"></i></span>
+          <div class="callout-container">
+            <p>This feature is for chatting. Choose a person from Contacts, and send them "Hey ..."</p>
+          </div>
+        </div>
+
+
+
+
+
+   <br></br>
+     <div class="row" style="border: 4px solid #e6ac00; width:95%;height: 95%">
+
+  <div class="left" >
+    <div class="vertical-menu"> 
+      <h2 style="padding: 25px; font-size: 35px;text-align: center ;color:white">Contacts</h2>
+      <a class="chatbtn1" onclick="openForm() || closeForm2()"><i class="fas fa-user-circle"></i> Alex</a> 
+      <a class="chatbtn1" onclick="openForm2()|| closeForm()"><i class="far fa-user-circle"></i> Jimmy</a> 
+      <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+    </div> 
+  </div>
+
+ <div class="right" >
+
+
+       <div class="chat-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+          <h2><i class="fas fa-user-circle"></i> Alex<button type="button" class="btncancel" onclick="closeForm()"><i class=" fas fa-times"></i></button></h2>
+          
+          
+            <br></br><br></br><br></br><br></br><br></br><br></br>
+            <div class="notcomp">
+            </div>
+                        <input type="text" class="txtb" placeholder=" Write here">
+
+             
+        </form>
+       </div>
+ 
+
+        <script>
+          function openForm() {
+            document.getElementById("myForm").style.display = "block";
+          }
+
+          function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+          }
+          
+        </script>
+        <script type="text/javascript">
+          $(".txtb").on("keyup",function(e){
+            //13  means enter button
+            if(e.keyCode == 13 && $(".txtb").val() != "")
+            {
+              var task = $("<div class='task'></div><br></br>").text($(".txtb").val());
+
+              task.append();
+              $(".notcomp").append(task);
+              $(".txtb").val("");  
+            }
+          });
+        </script>
+
+
+        <div class="chat-popup2" id="myForm2">
+          <form action="/action_page.php" class="form-container">
+            <h2><i class="far fa-user-circle"></i> Jimmy<button type="button" class="btncancel" onclick="closeForm2()"><i class=" fas fa-times"></i></button></h2>
+            
+            <br></br><br></br><br></br><br></br><br></br><br></br>
+             <div class="notcomp2">
+            </div>
+            
+            <input type="text" class="txtb2" placeholder=" Write here">
+          </form>
+        </div>
+   
+
+    <script>
+      function openForm2() {
+        document.getElementById("myForm2").style.display = "block";
+      }
+
+      function closeForm2() {
+        document.getElementById("myForm2").style.display = "none";
+      }
+    
+
+      
+    </script>
+    <script type="text/javascript">
+          $(".txtb2").on("keyup",function(e){
+            //13  means enter button
+            if(e.keyCode == 13 && $(".txtb2").val() != "")
+            {
+              var task = $("<div class='task'></div><br></br>").text($(".txtb2").val());
+
+              task.append();
+              $(".notcomp2").append(task);
+              $(".txtb2").val("");  
+            }
+          });
+        </script>
+  </div>
+</div>
+</div>
+
+</body>

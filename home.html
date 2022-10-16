@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <link rel="stylesheet" type="text/css" href="home.css">
+      <!-- link for CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			
+			<!-- icon link -->
+		  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+        
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+<title>CSS Template</title>
+
+
+</head>
+<body>
+
+<div class="sidenav">
+  <h2><font color="#ffbf00">Class</font><font color="#5900b3">Mates</font></a></h2>
+  <a class="active" href="home.html"><i class="fas fa-home"></i> Home</a> 
+  <a href="board.html"><i class="fas fa-users"></i> Board</a> 
+  <a href="progretion.html"><i class="fas fa-chart-line"></i> Progression</a> 
+  <a href="chat.html"><i class="fas fa-comments"></i> Chat</a>
+  <a href="calender.html"><i class="fas fa-calendar-alt"></i> Calender</a> 
+  <a href="document.html"><i class="fas fa-folder-open"></i> Documents</a> 
+  <a href="clipart.html"><i class="fas fa-paper-plane"></i> Q&A Clipart</a>
+  
+  </a>
+ 
+</div>
+
+
+<div class="content">
+  <h1>
+  Home
+  <button class="button" onclick="openForm()"><i class="fas fa-user"></i></button>
+  <div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <r style="font-size:50px; padding: : 10px"><i class="fas fa-user-circle"></i></r>
+
+    <label >
+      <p class="online">Online</p>
+      <p class="pname">User Name</p>
+      <p class="email">username@example.com</p>
+   </label>
+    
+
+    
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+</h1>
+
+
+
+        <div class="callout">
+          <div class="callout-header"><i style="color: #ffbf00"class="fas fa-lightbulb"></i></div>
+          <span class="closebtn" onclick="this.parentElement.style.display='none';"><i class=" fas fa-times"></i></span>
+          <div class="callout-container">
+            <p>Welcome Viewer...</p>
+            <p>This is the site's home page. On the main paige there are side navigation bars and buttons that will take you to the other functions of this web application</p>
+          </div>
+        </div>
+
+
+
+
+
+  <br></br>
+  <button onclick="window.location.href = 'board.html';" class="button1 "><i class="fas fa-users"></i></button>
+  <button onclick="window.location.href = 'progretion.html';"class="button1 "><i class="fas fa-chart-line"></i></button>
+  <button onclick="window.location.href = 'chat.html';"class="button1 "><i class="fas fa-comments"></i></button>
+  <button onclick="window.location.href = 'calender.html';"class="button1 "><i class="fas fa-calendar-alt"></i>  </button>
+  <button onclick="window.location.href = 'document.html';"class="button1 "><i class="fas fa-folder-open"></i></button>
+  <button onclick="window.location.href = 'Clipart.html';"class="button1"><i class="fas fa-paper-plane"></i></button>
+
+
+</div>
+
+
+
+
+</body>
+
+
+

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+			<link rel="stylesheet" type="text/css" href="progretion.css">
+			<!-- link for CSS -->
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<!-- icon link -->
+		  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+        
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CSS Template</title>
+
+
+</head>
+<body>
+
+  
+
+<div class="sidenav">
+  <h2><font color="#ffbf00">Class</font><font color="#5900b3">Mates</font></a></h2>
+  <a href="home.html"><i class="fas fa-home"></i> Home</a> 
+  <a href="board.html"><i class="fas fa-users"></i> Board</a> 
+  <a class="active" href="progretion.html"><i class="fas fa-chart-line"></i> Progression</a> 
+  <a href="chat.html"><i class="fas fa-comments"></i> Chat</a>
+  <a href="calender.html"><i class="fas fa-calendar-alt"></i> Calender</a> 
+  <a href="document.html"><i class="fas fa-folder-open"></i> Documents</a> 
+  <a href="clipart.html"><i class="fas fa-paper-plane"></i> Q&A Clipart</a>
+
+  <div class="footer">
+    <p>Copyright&#169_DW13P_u1740136</p>
+  </div>
+</div>
+
+<div class="content">
+  <h1>Personal Progression</h1>
+
+
+
+
+        <div class="callout">
+          <div class="callout-header"><i style="color: #ffbf00"class="fas fa-lightbulb"></i></div>
+          <span class="closebtn" onclick="this.parentElement.style.display='none';"><i class=" fas fa-times"></i></span>
+          <div class="callout-container">
+            <p>This feature will keep track of your progress. Write your task in text field and click Enter to use it. When you have finished your task, click on the "<i class='fas fa-check'></i>" button to move your taks to Completed.</p>
+          </div>
+        </div>
+
+
+
+
+
+   <br></br>
+
+
+    <div class="container">
+      <input type="text" class="txtb" placeholder="Add a task">
+      <div class="notcomp">
+        <h3>Not Completed</h3>
+
+
+
+      </div>
+
+      <div class="comp">
+        <h3>Completed</h3>
+      </div>
+    </div>
+
+
+    <script type="text/javascript">
+      $(".txtb").on("keyup",function(e){
+        //13  means enter button
+        if(e.keyCode == 13 && $(".txtb").val() != "")
+        {
+          var task = $("<div class='task'></div>").text($(".txtb").val());
+          var del = $("<i class='fas fa-trash-alt'></i>").click(function(){
+            var p = $(this).parent();
+            p.fadeOut(function(){
+              p.remove();
+            });
+          });
+
+          var check = $("<i class='fas fa-check'></i>").click(function(){
+            var p = $(this).parent();
+            p.fadeOut(function(){
+              $(".comp").append(p);
+              p.fadeIn();
+            });
+            $(this).remove();
+          });
+
+          task.append(del,check);
+          $(".notcomp").append(task);
+            //to clear the input
+          $(".txtb").val("");
+        }
+      });
+    </script>
+</div>
+
+</body>

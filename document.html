@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+			<link rel="stylesheet" type="text/css" href="document.css">
+			<!-- link for CSS -->
+			
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<!-- icon link -->
+		  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+        
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>CSS Template</title>
+
+
+</head>
+<body>
+<div class="sidenav">
+  <h2><font color="#ffbf00">Class</font><font color="#5900b3">Mates</font></a></h2>
+  <a href="home.html"><i class="fas fa-home"></i> Home</a> 
+  <a href="board.html"><i class="fas fa-users"></i> Board</a> 
+  <a href="progretion.html"><i class="fas fa-chart-line"></i> Progression</a> 
+  <a href="chat.html"><i class="fas fa-comments"></i> Chat</a>
+  <a href="calender.html"><i class="fas fa-calendar-alt"></i> Calender</a> 
+  <a class="active" href="document.html"><i class="fas fa-folder-open"></i> Documents</a> 
+  <a href="clipart.html"><i class="fas fa-paper-plane"></i> Q&A Clipart</a>
+  
+</div>
+
+<div class="content">
+  <h1>Document</h1>
+ 
+
+
+        <div class="callout">
+          <div class="callout-header"><i style="color: #ffbf00"class="fas fa-lightbulb"></i></div>
+          <span class="closebtn" onclick="this.parentElement.style.display='none';"><i class=" fas fa-times"></i></span>
+          <div class="callout-container">
+            <p>You can select your files and save it here. Just click on Choose Files button and select your file then hit the Upload button</p>
+          </div>
+        </div>
+
+
+
+
+
+  <h2>Select some files</h2>
+<br><input type="file" class="file-upload-btn" multiple></br>
+<br><button onclick = "showFiles()" class = "btn">Upload</button></b>
+<br><div class="show"></div><br>
+<script>
+  function showFiles() {
+      var fileBtn = document.querySelector(".file-upload-btn");
+      var showMsg = document.querySelector(".show");
+      showMsg.innerHTML='';
+      if(fileBtn.files.length === 0){
+         showMsg.innerHTML = "Please select at least one file!!";
+      } else {
+         showMsg.innerHTML = "|| YOUR FILES ||";
+         for(let i=0;i<fileBtn.files.length;i++) {
+            showMsg.innerHTML += '<p>'+ (i+1)+') ' + fileBtn.files[i].name + '<p>';
+         }
+      }
+   }
+</script>
+
+</body>

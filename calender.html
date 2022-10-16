@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
+
+	<head>
+			<link rel="stylesheet" type="text/css" href="calender.css">
+			<!-- link for CSS -->
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+			<!-- icon link -->
+		  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+        
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="calendar.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>CSS Template</title>
+
+
+</head>
+<body>
+
+<div class="sidenav" >
+  <h2><font color="#ffbf00">Class</font><font color="#5900b3">Mates</font></a></h2>
+  <a href="home.html"><i class="fas fa-home"></i> Home</a> 
+  <a href="board.html"><i class="fas fa-users"></i> Board</a> 
+  <a href="progretion.html"><i class="fas fa-chart-line"></i> Progression</a> 
+  <a href="chat.html"><i class="fas fa-comments"></i> Chat</a>
+  <a class="active" href="calender.html"><i class="fas fa-calendar-alt"></i> Calender</a> 
+  <a href="document.html"><i class="fas fa-folder-open"></i> Documents</a> 
+  <a href="clipart.html"><i class="fas fa-paper-plane"></i> Q&A Clipart</a>
+  <div class="footer">
+    <p>Copyright&#169_DW13P_u1740136</p>
+  </div>
+</div>
+
+<div class="content">
+  <h1>Calender</h1>
+
+
+
+
+        <div class="callout">
+          <div class="callout-header"><i style="color: #ffbf00"class="fas fa-lightbulb"></i></div>
+          <span class="closebtn" onclick="this.parentElement.style.display='none';"><i class=" fas fa-times"></i></span>
+          <div class="callout-container">
+            <p>This is a scheduler. You can select your date and click on it after that write you event and click on save button. It will save your event on this calendar</p>
+          </div>
+        </div>
+
+
+
+
+
+   <br></br>
+   <div class="cal-container">
+     <div id="page-body">
+        <!-- [PERIOD SELECTOR] -->
+        <div id="cal-date">
+          <select id="cal-mth"></select>
+          <select id="cal-yr"></select>
+          <input id="cal-set" type="button" value="SET"/>
+        </div>
+
+        <!-- [CALENDAR] -->
+        <div id="cal-container"></div>
+
+        <!-- [EVENT] -->
+        <div id="cal-event"></div>
+     </div>
+   </div>
+</body>

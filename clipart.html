@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+			<link rel="stylesheet" type="text/css" href="clipart.css">
+			<!-- link for CSS -->
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+			<!-- icon link -->
+		  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+        
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CSS Template</title>
+
+
+</head>
+<body>
+
+
+<div class="sidenav">
+   <h2><font color="#ffbf00">Class</font><font color="#5900b3">Mates</font></a></h2>
+  <a href="home.html"><i class="fas fa-home"></i> Home</a> 
+  <a href="board.html"><i class="fas fa-users"></i> Board</a> 
+  <a href="progretion.html"><i class="fas fa-chart-line"></i> Progression</a> 
+  <a href="chat.html"><i class="fas fa-comments"></i> Chat</a>
+  <a href="calender.html"><i class="fas fa-calendar-alt"></i> Calender</a> 
+  <a href="document.html"><i class="fas fa-folder-open"></i> Documents</a> 
+  <a class="active" href="clipart.html"><i class="fas fa-paper-plane"></i> Q&A Clipart</a>
+  <div class="footer">
+    <p>Copyright&#169_DW13P_u1740136</p>
+  </div>
+</div>
+
+<div class="content">
+  <h1>Question & Answer Clipart</h1>
+
+
+
+
+
+        <div class="callout">
+          <div class="callout-header"><i style="color: #ffbf00"class="fas fa-lightbulb"></i></div>
+          <span class="closebtn" onclick="this.parentElement.style.display='none';"><i class=" fas fa-times"></i></span>
+          <div class="callout-container">
+            <p>This is the Q&A Clipart.</p>
+<p>Click on the "Question" button and write your doubts and question and press the "Add Question" button.</p> <p>Click on the "Answer" button and if you know the response to either of the following questions, select the "Answer" button and send the response.</p>
+          </div>
+        </div>
+
+
+
+
+
+   <br></br>
+  <!-- Q&A BUTTONS ------------------------------------------------------------------------------------------------------------->
+   <!-- Q&A BUTTONS ------------------------------------------------------------------------------------------------------------->
+   <!-- Q&A BUTTONS ------------------------------------------------------------------------------------------------------------->
+  <div class="btn-container">
+    <button class="qbtn" onclick="openForm() || closeForm2()">
+      <h2>Questions?</h2>
+      <p>What is your Question?</p>
+    </button>
+
+
+
+    <button class="abtn" onclick="openForm2() || closeForm()">
+      <h2>Answer!</h2>
+      <p>Questions for you.</p>
+    </button>
+      
+  </div>
+
+    <br></br>
+
+   <!-- Question Onclick Event  ------------------------------------------------------------------------------------------------------------->
+   <!---------------------------------------------------------------------------------------------------------------------------------------->
+   <!---------------------------------------------------------------------------------------------------------------------------------------->
+  <div class="chat-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+        <label for="msg"><b>Add Question</b></label>
+      <br></br>
+        <textarea class="form-container" placeholder="Start your question with 'What', 'How', 'Why', etc..." name="msg" required type="textfeild" id="myText"></textarea>
+
+ 
+        <button class="btn" onclick="myFunction() ">Add Question</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+      <br></br>
+       
+    </form>
+        <div class="qtext" id="demo"></div>
+        <br></br>
+  </div>
+
+  <script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+    function myFunction() {
+      var x = document.getElementById("myText").value;
+      document.getElementById("demo").innerHTML += '<p>'+ '<ol>'+ '<li>' + x + '</li>'+'<ol>' + '<p>';
+      document.getElementById("demo").style.display = "block";
+         }
+
+      
+  </script>
+
+  <!-- Answer Onclick Event  ------------------------------------------------------------------------------------------------------------->
+  <!---------------------------------------------------------------------------------------------------------------------------------------->
+  <!---------------------------------------------------------------------------------------------------------------------------------------->
+
+
+  <div class="chat-popup2" id="myForm2">
+    <form  class="form-container2">
+      
+      <label for="msg"><b>Questions For You</b></label>
+      <br></br>
+      <div class="AnsPane">
+        <div class="q1">
+          <r style="font-size: 20px">1. How do I open pages in Google Docs?</r>
+           <br></br>
+          <button type="submit" class="btn" onclick="openForm3()">Answer</button>
+         
+        </div>
+      </div>   
+          <div class="chat-popup3" id="myForm3">
+            <form action="/action_page.php" class="form-container3">
+              
+              <textarea class="anstext" placeholder="Type Answer.." required type="textfeild" id="myaText"></textarea>
+            
+        <button class="btn" onclick="myFunction2()">Add Answer</button>
+        <button type="button" class="btn cancel" onclick="closeForm2()">Cancel</button>
+    
+        
+            </form>
+           
+          </div>
+    </form>
+     <div class="atext" id="ademo"></div>      
+   </div>  
+          <script>
+            
+           
+            function openForm2() {
+              document.getElementById("myForm2").style.display = "block";
+            }
+             
+            function closeForm2() {
+              document.getElementById("myForm2").style.display = "none";
+            }
+            function openForm3() {
+              document.getElementById("myForm3").style.display = "block";
+            }
+            function closeForm2() {
+              document.getElementById("myForm2").style.display = "none";
+            }
+             function myFunction2() {
+              var x = document.getElementById("myaText").value;
+              document.getElementById("ademo").innerHTML = x;
+                 }
+      
+              
+            </script>
+
+
+  </div>
+  <br></br>
+</body>
